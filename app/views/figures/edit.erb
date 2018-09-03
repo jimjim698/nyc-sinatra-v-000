@@ -5,7 +5,7 @@
   <br></br>
 
   <%Title.all.each do |title|%>
-  <input type="checkbox" name="figure[title_ids][]" value="<%=title.id%>"<%='checked' if @figure.title == title%>">
+  <input type="checkbox" name="figure[title_ids][]" value="<%=title.id%>"<%='checked' if @figure.titles == title%>">
   <%=title.name%></input>
   <%end%>
 </form>
