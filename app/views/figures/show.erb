@@ -1,3 +1,5 @@
 <%=@figure.name%>
 <br></br>
-<%=@figure.titles%>
+<%@figure.titles.each do |title|%>
+<%=title.name%>
+  
