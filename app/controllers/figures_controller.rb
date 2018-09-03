@@ -6,7 +6,7 @@ class FiguresController < ApplicationController
 
   post '/figures' do
     @figure = Figure.create(params[:figure])
-    @figure.titles<< Title.create(params[:title][:name])
+    @figure.titles<< Title.create(name: params[:title][:name])
     erb :'figures/show'
   end
 
