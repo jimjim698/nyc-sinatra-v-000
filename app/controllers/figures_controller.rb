@@ -28,6 +28,8 @@ class FiguresController < ApplicationController
   post '/figures/:id' do
     @figure = Figure.find_by_id(params[:id])
     @figure.update(params[:figure])
+    if !params[:title][:name].empty?
+      @figure.titles<< Title.create(name: params[:title][:name])
     redirect "figures/#{@figure.id}"
   end
 
