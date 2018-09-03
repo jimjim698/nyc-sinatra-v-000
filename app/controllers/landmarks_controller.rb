@@ -9,8 +9,8 @@ class LandmarksController < ApplicationController
   end
 
   get '/landmarks' do
-    erb :'landmarks/index'
-  end 
+    erb :'/landmarks/index'
+  end
 
 
 
