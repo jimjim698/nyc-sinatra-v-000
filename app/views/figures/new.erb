@@ -7,7 +7,7 @@
   <input type="text" name="figure[name]" value="">
   <br></br>
 
-<label>Choose Figure Titles</label>
+<label>Choose Titles For Your Figure:</label>
 <br></br>
   <%Title.all.each do |title|%>
   <input type="checkbox" name="figure[title_ids][]" value="<%=title.id%>" id= "<%title.name%>">
