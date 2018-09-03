@@ -23,9 +23,10 @@ class LandmarksController < ApplicationController
   end
 
   post '/landmarks' do
+    binding.pry
     @landmark = Landmark.find_by_id(params[:id])
     @landmark.update(params[:landmark])
-    
+
     redirect "/landmarks/#{@landmark.id}"
   end
 
