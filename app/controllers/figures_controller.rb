@@ -25,7 +25,7 @@ class FiguresController < ApplicationController
   erb :'figures/edit'
   end
 
-  post '/figures/:id' do 
+  post '/figures/:id' do
   end 
 
 
