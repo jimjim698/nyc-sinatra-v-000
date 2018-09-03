@@ -11,5 +11,8 @@ class FiguresController < ApplicationController
     erb :'figures/show'
   end
 
+  get '/figures' do 
+    erb 
+  end 
 
 end
