@@ -10,7 +10,7 @@
 <h2><label>Choose Titles For Your Figure:</label></h2>
 <br></br>
   <%Title.all.each do |title|%>
-  <input type="checkbox" name="figure[title_ids][]" value="<%=title.id%>" id= "<%=title.name%>">
+  <input type="checkbox" name="figure[title_ids][]" value="<%=title.id%>" id= "title_<%=title.id%>">
   <%=title.name%></input>
   <%end%>
 
