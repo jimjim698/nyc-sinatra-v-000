@@ -1,9 +1,15 @@
 <form class="" action="/figures" method="post">
   <input type="text" name="figure[name]" value="">
+  <br></br>
 
-
+  <%Title.all do |title|%>
+  <input type="checkbox" name="figure[title_ids][]" value="">
+  <%=title.name%></input>
+  <%end%>
 
   <br></br>
   <input type="submit" name="sumbit" value="Create">
+  
+  
 
 </form>
