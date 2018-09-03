@@ -8,9 +8,9 @@
   <br></br>
 
   <%Title.all do |title|%>
-  <input type="checkbox" name="figure[title_ids][]" value="">
-  <%=title.name%>
-  <%end%></input>
+  <input type="checkbox" name="figure[title_ids][]" value="<%=title.id%>">
+  <%=title.name%></input>
+  <%end%>
 
   <br></br>
   <input type="submit" name="sumbit" value="Create">
