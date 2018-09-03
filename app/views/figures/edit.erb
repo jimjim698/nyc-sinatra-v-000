@@ -1,5 +1,10 @@
 <form class="" action="figures/<%=@figure.id%>" method="post">
 
-  <input type="text" name="figure[name]" value="">
+  <input type="text" name="figure[name]" value="<%=@figure.name%>">
+
+  <br></br>
+
+  <%Title.all.each do |title|%>
+  <input type="checkbox" name="" value="<%=title.id%><%='checked' if @pet.owner == owner%>">
 
 </form>
