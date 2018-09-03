@@ -18,11 +18,11 @@ class FiguresController < ApplicationController
   get '/figures/:id' do
     @figure = Figure.find_by_id(params[:id])
     erb :'figures/show'
-  end 
+  end
 
-get '/figures/:id/edit' do 
+get '/figures/:id/edit' do
   erb :'figures/edit'
-end 
-  
+end
+
 
 end
