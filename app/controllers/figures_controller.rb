@@ -12,7 +12,7 @@ class FiguresController < ApplicationController
   end
 
   get '/figures' do
-    erb
-  end 
+    erb '/figures/figures'
+  end
 
 end
